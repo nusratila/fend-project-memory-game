@@ -38,9 +38,12 @@ function initialize(){
 
    clearInterval(setInId);
    assignStar();
-
+   document.querySelector(".moves").innerHTML = '0';
+   document.getElementById("overlay").style.display = "none";
 };
-
+function doNothing(){
+    document.getElementById("overlay").style.display = "none";
+}
 let secondsLabel = document.querySelector(".timer");
 function setTime() {
     ++totalSeconds;
@@ -101,11 +104,11 @@ function changeStar(n){
         let star = stars[i].querySelector("I");
        
         if (i<n) {
-            star.className= "fa fa-star-o" ;
+            star.className= "fa fa-2x fa-star-o" ;
         }
 
       else{
-        star.className = "fa fa-star";
+        star.className = "fa fa-2x fa-spin fa-star";
       }
         
         
@@ -158,7 +161,13 @@ function hideCard(liid){
 
 function checkGameOver(){
     if (matchCount == 8){
-        alert("congratulations, total star : " + (5-starCount) + " time: " + finishTime );
+        //alert("congratulations, total star : " + (5-starCount) + " time: " + finishTime );
+        let starstr ="";
+        for(let i=0; i<5-starCount;i++){
+            starstr+='<i class="fa fa-spin fa-star"></i> ';
+        }
+        document.querySelector(".congtext").innerHTML = ("<h1>congratulations!!!</h1><br> You have earned " + starstr +'  <br> It took ' + finishTime );
+        document.getElementById("overlay").style.display = "block";
         clearInterval(setInId);
     }
 

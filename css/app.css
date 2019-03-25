@@ -1,6 +1,11 @@
 html {
     box-sizing: border-box;
 }
+.fa-star{
+    color:rgb(187, 39, 187);
+    
+}
+
 
 *,
 *::before,
@@ -17,7 +22,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('giphy1.gif'); /* Background pattern from Subtle Patterns */
     font-family: 'Coda', cursive;
 }
 
@@ -29,8 +34,14 @@ body {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: cursive;
     font-weight: 300;
+}
+
+header h1 {
+    color: purple;
+    font-size: 45px;
+    font-weight: bolder;
 }
 
 /*
@@ -67,7 +78,7 @@ h1 {
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    background: #9756a5;
     cursor: default;
 }
 
@@ -113,5 +124,78 @@ h1 {
     padding: 0;
     display: inline-block;
     margin: 0 5px 0 0;
+    font-size: 26px;
 
 }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(25,0,67,0.8);
+    z-index: 2;
+    cursor: pointer;
+    
+  }
+
+  #innertext{
+      font-size: 20px;
+      
+      color: white;
+  }
+
+  .congtext{
+      font-size: 35px;
+      color:rgb(146, 230, 97);
+  }
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color:lightcoral;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px greenyellow;
+  }
+
+  .button:hover {background-color: #3e8e41}
+
+  .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+
+  .reset-button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+   
+  
+    color: #fff;
+    background-color:lightseagreen;
+
+    border-radius: 15px;
+    box-shadow: 0 9px plum;
+}
+
