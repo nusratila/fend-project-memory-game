@@ -1,11 +1,10 @@
 html {
     box-sizing: border-box;
 }
+
 .fa-star{
     color:rgb(187, 39, 187);
-    
 }
-
 
 *,
 *::before,
@@ -125,7 +124,6 @@ header h1 {
     display: inline-block;
     margin: 0 5px 0 0;
     font-size: 26px;
-
 }
 
 #overlay {
@@ -137,64 +135,60 @@ header h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(25,0,67,0.8);
+    background-color: rgba(25,0,67,0.7);
     z-index: 2;
     cursor: pointer;
-    
-  }
+}
 
-  #innertext{
-      font-size: 20px;
-      
-      color: white;
-  }
+#innertext{
+    font-size: 20px;
+    color: white;
+}
 
-  .congtext{
-      font-size: 35px;
-      color:rgb(146, 230, 97);
-  }
+.congtext{
+    font-size: 35px;
+    color:rgb(146, 230, 97);
+}
   
-  .text{
+.text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-  }
-  .button {
-      display: inline-block;
-      padding: 15px 25px;
-      font-size: 24px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      outline: none;
-      color: #fff;
-      background-color:lightcoral;
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 9px greenyellow;
-  }
+}
 
-  .button:hover {background-color: #3e8e41}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:lightcoral;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px greenyellow;
+}
 
-  .button:active {
-      background-color: #3e8e41;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-  }
+.button:hover {background-color: #3e8e41}
 
-  .reset-button {
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.reset-button {
     display: inline-block;
     padding: 10px 25px;
     font-size: 24px;
     cursor: pointer;
     text-align: center;
-   
-  
     color: #fff;
-    background-color:lightseagreen;
-
+    background-color: lightseagreen;
     border-radius: 15px;
     box-shadow: 0 9px plum;
 }
