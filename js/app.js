@@ -23,7 +23,6 @@ function shuffle(array){
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     };
-
     return array;
 };
 
@@ -34,11 +33,9 @@ function changeStar(n){
 
     for (let i =0; i<5; i=i+1){
         let star = stars[i].querySelector("I");
-       
         if (i<n) {
             star.className= "fa fa-2x fa-star-o" ;
         }
-
         else{
         star.className = "fa fa-2x fa-spin fa-star";
         }
@@ -50,22 +47,18 @@ function assignStar(){
         changeStar(4);
         starCount=4;
     }
-
     else if(clickCount > 40){
         changeStar(3);
         starCount=3;
     }
-
     else if(clickCount > 30){
         changeStar(2);
         starCount=2;
     }
-
     else if(clickCount > 20){
         changeStar(1);
         starCount=1;
     }
-
     else{
         changeStar(0);
         starCount=0;
@@ -110,14 +103,11 @@ function showCard(ele){
     currentIcon = ele.firstElementChild.classList[1];
     ele.className = "card open show";
     clickCount++;
-
     if (clickCount==1){
         totalSeconds = 0;
         setInId= setInterval(setTime, 1000);
     }
-
     assignStar();
-
     let moves = document.querySelector(".moves");
     moves.innerHTML=clickCount;
 };
@@ -164,7 +154,6 @@ function checkGameOver(){
         clearInterval(setInId);
     }
 };
-
 
 initialize();
 
